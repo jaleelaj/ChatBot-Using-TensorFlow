@@ -1,0 +1,335 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+     "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+     "responses": ["I.m Joana, your bot assistant", "I'm Joana, an Artificial Intelligent bot"]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me Joana.", "I'm Joana!", "Just call me as Joana"]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+    },
+    {"tag": "createaccount",
+    "patterns": ["I need to create a new account", "how to open a new account", "I want to create an account", "can you create an account for me", "how to open a new account"],
+    "responses": ["You can just easily create a new account from our web site", "Just go to our web site and follow the guidelines to create a new account"]
+    },
+    {"tag": "complaint",
+    "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+    "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
+    },
+    {
+        "tag": "product_search",
+        "patterns": ["Can you help me find a product?", "I am looking for a new phone", "Show me the latest laptops"],
+        "responses": ["Sure, what specific product are you looking for?", "Can you provide more details about the item?"]
+    },
+    {
+        "tag": "product_recommendation",
+        "patterns": ["Can you recommend a good phone?", "What is the best laptop for gaming?", "Suggest me a good budget smartphone"],
+        "responses": ["Based on your preferences, I recommend checking out the XYZ model.", "Here are some popular options you might like."]
+    },
+    {
+        "tag": "price_comparison",
+        "patterns": ["How does this compare to other products?", "Is this cheaper than the previous model?", "Which one is more affordable?"],
+        "responses": ["Let me compare the prices and features for you.", "This product is slightly more expensive but offers better features."]
+    },
+    {
+        "tag": "product_review",
+        "patterns": ["What do people say about this?", "Are the reviews good?", "Is this product worth buying?"],
+        "responses": ["This product has received positive reviews from most customers.", "Here are some reviews you might find helpful."]
+    },
+    {
+        "tag": "product_availability",
+        "patterns": ["Is this item available?", "Can I buy this now?", "Do you have this in stock?"],
+        "responses": ["Let me check the availability for you.", "Yes, this product is currently in stock."]
+    },
+    {
+        "tag": "delivery_time",
+        "patterns": ["How long will delivery take?", "When can I get my order?", "What is the estimated delivery time?"],
+        "responses": ["Delivery typically takes 3-5 business days.", "You can expect your order by [insert date]."]
+    },
+    {
+        "tag": "payment_options",
+        "patterns": ["What payment methods do you accept?", "Can I pay with PayPal?", "Do you accept credit cards?"],
+        "responses": ["We accept credit/debit cards, net banking, UPI, and more.", "Yes, you can pay using PayPal."]
+    },
+    {
+        "tag": "apply_coupon",
+        "patterns": ["How can I use a coupon?", "I have a discount code", "Can I apply a coupon to my order?"],
+        "responses": ["You can apply your coupon code at checkout.", "Just enter the coupon code before completing your purchase."]
+    },
+    {
+        "tag": "product_details",
+        "patterns": ["Tell me more about this product", "What are the specifications?", "Can you give me more details?"],
+        "responses": ["Sure, here are the detailed specifications for this product.", "This product features..."]
+    },
+    {
+        "tag": "product_warranty",
+        "patterns": ["Does this come with a warranty?", "How long is the warranty?", "Is there a guarantee?"],
+        "responses": ["Yes, this product comes with a 1-year warranty.", "The warranty covers manufacturing defects."]
+    },
+    {
+        "tag": "track_order",
+        "patterns": ["Where is my order?", "Can I track my package?", "What is the status of my order?"],
+        "responses": ["You can track your order using the tracking link sent to your email.", "Let me check the status of your order for you."]
+    },
+    {
+        "tag": "cancel_order",
+        "patterns": ["Can I cancel my order?", "I want to cancel my purchase", "How do I cancel my order?"],
+        "responses": ["You can cancel your order from your account dashboard.", "Let me assist you with canceling your order."]
+    },
+    {
+        "tag": "order_confirmation",
+        "patterns": ["Did my order go through?", "Is my purchase confirmed?", "I didn't receive an order confirmation"],
+        "responses": ["Your order has been confirmed. You should receive an email shortly.", "Let me check your order status."]
+    },
+    {
+        "tag": "order_return",
+        "patterns": ["How do I return an item?", "I want to return my order", "Can I get a refund?"],
+        "responses": ["You can initiate a return through your account.", "Let me guide you through the return process."]
+    },
+    {
+        "tag": "order_exchange",
+        "patterns": ["Can I exchange this product?", "How do I exchange an item?", "I want a different size/color"],
+        "responses": ["You can request an exchange through your account.", "Let me assist you with the exchange process."]
+    },
+    {
+        "tag": "order_invoice",
+        "patterns": ["Can I get an invoice for my order?", "Where can I find my invoice?", "I need a receipt for my purchase"],
+        "responses": ["Your invoice is available in your order history.", "Let me help you download your invoice."]
+    },
+    {
+        "tag": "order_issue",
+        "patterns": ["I received the wrong item", "My order is damaged", "There's an issue with my order"],
+        "responses": ["I'm sorry to hear that. Let me assist you with this issue.", "Please provide more details, and I'll help resolve the problem."]
+    },
+    {
+        "tag": "order_change",
+        "patterns": ["Can I change my order?", "I want to modify my purchase", "How do I update my order?"],
+        "responses": ["You can change your order from your account before it ships.", "Let me help you with updating your order."]
+    },
+    {
+        "tag": "order_payment",
+        "patterns": ["My payment didn't go through", "I was charged twice", "How do I complete my payment?"],
+        "responses": ["Please check your payment method and try again.", "Let me assist you with your payment issue."]
+    },
+    {
+        "tag": "order_history",
+        "patterns": ["Can I see my past orders?", "Show me my order history", "Where can I find my previous purchases?"],
+        "responses": ["You can view your order history in your account.", "Let me show you your past orders."]
+    },
+    {
+        "tag": "account_creation",
+        "patterns": ["How do I create an account?", "Can I sign up?", "I want to register an account"],
+        "responses": ["You can create an account by signing up on our website.", "Let me help you set up your account."]
+    },
+    {
+        "tag": "account_login",
+        "patterns": ["How do I log in?", "I can't access my account", "Help me log in"],
+        "responses": ["You can log in with your email and password.", "Let me assist you with logging in."]
+    },
+    {
+        "tag": "account_password_reset",
+        "patterns": ["I forgot my password", "How do I reset my password?", "I can't remember my login details"],
+        "responses": ["You can reset your password by clicking on 'Forgot Password'.", "Let me help you reset your password."]
+    },
+    {
+        "tag": "account_update",
+        "patterns": ["How do I update my account details?", "I want to change my email", "Can I update my profile?"],
+        "responses": ["You can update your account information in your account settings.", "Let me guide you through updating your details."]
+    },
+    {
+        "tag": "account_security",
+        "patterns": ["Is my account secure?", "How do I enable two-factor authentication?", "What are your security measures?"],
+        "responses": ["Your account is protected by multiple security layers.", "You can enable two-factor authentication in your settings."]
+    },
+    {
+        "tag": "account_deletion",
+        "patterns": ["I want to delete my account", "How do I close my account?", "Can I remove my profile?"],
+        "responses": ["You can delete your account in your settings.", "Let me assist you with deleting your account."]
+    },
+    {
+        "tag": "account_notifications",
+        "patterns": ["How do I manage notifications?", "I want to stop receiving emails", "Can I update my notification settings?"],
+        "responses": ["You can manage your notification preferences in your account settings.", "Let me help you with updating your notifications."]
+    },
+    {
+        "tag": "account_privacy",
+        "patterns": ["How do you handle my data?", "Is my information private?", "What is your privacy policy?"],
+        "responses": ["We take your privacy seriously. You can read our privacy policy on our website.", "Your data is secure with us."]
+    },
+    {
+        "tag": "account_loyalty",
+        "patterns": ["Do you have a loyalty program?", "How do I earn rewards?", "What are the benefits of your loyalty program?"],
+        "responses": ["We offer a loyalty program with various benefits. You can sign up through your account.", "Let me tell you more about our rewards program."]
+    },
+    {
+        "tag": "account_help",
+        "patterns": ["I need help with my account", "Can you assist with my profile?", "I'm having trouble with my account"],
+        "responses": ["Sure, I'm here to help with your account issues.", "Let me assist you with your account concerns."]
+    },
+    {
+        "tag": "current_offers",
+        "patterns": ["What are the current offers?", "Are there any discounts?", "Show me the deals"],
+        "responses": ["We have several ongoing offers. Let me show you the best deals.", "Here are the current promotions available."]
+    },
+    {
+        "tag": "seasonal_sale",
+        "patterns": ["Is there a sale going on?", "What are the festival offers?", "Tell me about the seasonal discounts"],
+        "responses": ["We have exciting offers for the season. Don't miss out!", "Check out our festival sale for great discounts."]
+    },
+    {
+        "tag": "coupon_code",
+        "patterns": ["Do you have any coupons?", "How can I get a discount code?", "Give me a coupon"],
+        "responses": ["You can find discount codes on our website or promotional emails.", "Here is a coupon code you can use: SAVE20."]
+    },
+    {
+        "tag": "bulk_purchase",
+        "patterns": ["Do you offer discounts on bulk purchases?", "Can I get a deal for buying in bulk?", "What are the offers for large orders?"],
+        "responses": ["Yes, we offer special discounts for bulk purchases.", "Let me show you our bulk purchase offers."]
+    },
+    {
+        "tag": "membership_discount",
+        "patterns": ["What are the benefits of membership?", "Do members get extra discounts?", "Tell me about membership offers"],
+        "responses": ["As a member, you get exclusive discounts and early access to sales.", "Sign up for membership to enjoy additional benefits."]
+    },
+    {
+        "tag": "promo_notifications",
+        "patterns": ["How do I get notified of offers?", "Can I receive promo alerts?", "Notify me of discounts"],
+        "responses": ["You can subscribe to our newsletter or enable notifications in your account.", "Let me help you sign up for promotional alerts."]
+    },
+    {
+        "tag": "refer_a_friend",
+        "patterns": ["Do you have a referral program?", "How can I refer a friend?", "What rewards do I get for referrals?"],
+        "responses": ["You can refer friends and earn rewards through our referral program.", "Let me show you how to refer a friend."]
+    },
+    {
+        "tag": "special_event",
+        "patterns": ["Are there any special events coming up?", "Tell me about your next big sale", "What's the next promotion?"],
+        "responses": ["We have a special event coming up soon. Stay tuned for more details!", "Our next big sale is just around the corner. Get ready for great deals!"]
+    },
+    {
+        "tag": "promo_expiry",
+        "patterns": ["When does this offer expire?", "How long is the discount valid?", "Is this promotion still available?"],
+        "responses": ["This offer is valid until [insert date].", "Let me check if the promotion is still available."]
+    },
+    {
+        "tag": "exclusive_offers",
+        "patterns": ["Do you have any exclusive offers?", "Tell me about your VIP deals", "Are there any members-only discounts?"],
+        "responses": ["We have exclusive offers for VIP members. Let me show you what's available.", "Join our VIP club for access to exclusive deals."]
+    },
+    {
+        "tag": "general_support",
+        "patterns": ["I need help", "Can you assist me?", "I'm having an issue"],
+        "responses": ["Sure, how can I assist you today?", "Please tell me what you need help with."]
+    },
+    {
+        "tag": "technical_issue",
+        "patterns": ["The website is not working", "I'm having trouble with the app", "I can't access the site"],
+        "responses": ["I'm sorry for the inconvenience. Let me help you resolve the issue.", "Please try refreshing the page or restarting the app."]
+    },
+    {
+        "tag": "feedback",
+        "patterns": ["I want to give feedback", "How do I submit a review?", "Can I provide feedback on a product?"],
+        "responses": ["We appreciate your feedback. You can submit it through our website.", "Let me help you share your thoughts."]
+    },
+    {
+        "tag": "complaint",
+        "patterns": ["I have a complaint", "I'm not happy with the service", "I want to report an issue"],
+        "responses": ["I'm sorry to hear that. Let me assist you with your complaint.", "Please provide more details, and we'll work to resolve the issue."]
+    },
+    {
+        "tag": "return_policy",
+        "patterns": ["What is your return policy?", "How long do I have to return an item?", "Can I return a sale item?"],
+        "responses": ["You can return items within 30 days of purchase.", "Our return policy applies to all products, including sale items."]
+    },
+    {
+        "tag": "refund_status",
+        "patterns": ["When will I get my refund?", "What is the status of my refund?", "How long does it take to get a refund?"],
+        "responses": ["Refunds typically take 5-7 business days.", "Let me check the status of your refund for you."]
+    },
+    {
+        "tag": "shipping_info",
+        "patterns": ["What are your shipping options?", "Do you offer free shipping?", "How much does shipping cost?"],
+        "responses": ["We offer standard, expedited, and free shipping options.", "Shipping costs vary depending on your location and the item."]
+    },
+    {
+        "tag": "contact_support",
+        "patterns": ["How can I contact support?", "What is your customer service number?", "I need to talk to a representative"],
+        "responses": ["You can contact us at [insert phone number] or via email at support@flipkart.com.", "Our customer service team is available 24/7 to assist you."]
+    },
+    {
+        "tag": "faq",
+        "patterns": ["Where can I find the FAQs?", "Do you have a FAQ section?", "I have a question, where can I get answers?"],
+        "responses": ["You can find answers to common questions in our FAQ section.", "Let me direct you to our FAQ page."]
+    },
+    {
+        "tag": "live_chat",
+        "patterns": ["Can I chat with a live agent?", "I want to speak to someone", "Is there a live chat option?"],
+        "responses": ["You can chat with a live agent by clicking on the 'Live Chat' button.", "Let me connect you to a live representative."]
+    },
+    {
+        "tag": "site_navigation",
+        "patterns": ["How do I navigate the site?", "Where can I find electronics?", "I'm lost, help me navigate"],
+        "responses": ["You can use the menu at the top to find different categories.", "Let me guide you to the section you're looking for."]
+    },
+    {
+        "tag": "search_function",
+        "patterns": ["How do I search for products?", "Can I use filters?", "How do I narrow down the results?"],
+        "responses": ["You can use the search bar at the top of the page.", "Use filters on the left to refine your search results."]
+    },
+    {
+        "tag": "category_browsing",
+        "patterns": ["Show me the electronics section", "I want to browse clothing", "Where can I find home appliances?"],
+        "responses": ["You can find electronics under the 'Electronics' section in the menu.", "Let me take you to the clothing category."]
+    },
+    {
+        "tag": "related_products",
+        "patterns": ["Show me similar products", "Are there alternatives?", "What other options do I have?"],
+        "responses": ["Here are some products similar to what you're looking at.", "Let me show you some alternatives."]
+    },
+    {
+        "tag": "product_filtering",
+        "patterns": ["Can I filter by price?", "How do I sort by popularity?", "Show me only the 5-star rated products"],
+        "responses": ["You can use the filters on the side to narrow down your choices.", "Let me help you sort the products as per your preference."]
+    },
+    {
+        "tag": "product_search",
+        "patterns": ["Can I search for a specific brand?", "How do I find products on sale?", "Show me the latest arrivals"],
+        "responses": ["Use the search bar to look for specific brands or products.", "Here are the latest products that just arrived."]
+    },
+    {
+        "tag": "product_compatibility",
+        "patterns": ["Is this product compatible with my device?", "Will this work with my setup?", "How do I know if this fits my needs?"],
+        "responses": ["Let me check the compatibility for you.", "This product is compatible with most devices."]
+    },
+    {
+        "tag": "product_inquiry",
+        "patterns": ["How do I ask a question about a product?", "Can I contact the seller?", "I have a question about this item"],
+        "responses": ["You can ask questions on the product page under the Q&A section.", "Let me help you connect with the seller."]
+    },
+    {
+        "tag": "new_arrivals",
+        "patterns": ["What are the newest products?", "Show me the latest gadgets", "Any new arrivals in fashion?"],
+        "responses": ["Check out our latest arrivals section for new products.", "Here are the newest items in the store."]
+    },
+    {
+        "tag": "product_unavailability",
+        "patterns": ["This item is out of stock", "When will it be available?", "Can I get notified when it's back?"],
+        "responses": ["You can sign up for a restock notification on the product page.", "Let me check when this product will be back in stock."]
+    }
+]
+}
